@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 15, 2021 at 10:56 PM
+-- Generation Time: Apr 24, 2021 at 02:30 PM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -66,7 +66,7 @@ INSERT INTO `hospital_details` (`hospitalId`, `hospitalName`, `hospitalDesc`, `t
 (17, 'SRCC Children\'s Hospital\r\n', '', 15, 'Manipur', '', '', 1, 0, 1),
 (18, 'Surana Sethia Hospital\r\n\r\n', '', 23, 'Belgavi', '', '', 1, 0, 1),
 (19, 'Holy Spirit Hospital\r\n', '', 26, 'Chandrapore', '', '', 1, 0, 1),
-(20, 'Tata Hospital\r\n\r\nRead more at:\r\nhttps://mumbaimirror.indiatimes.com/coronavirus/news/list-of-private-hospitals-that-can-give-covid-19-vaccine-in-mumbai/articleshow/81297898.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst', '', 23, 'Delhi', '', '', 1, 0, 1);
+(20, 'Tata Hospital\r\n\r\n\r\n', '', 23, 'Delhi', '', '', 1, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -82,14 +82,17 @@ CREATE TABLE IF NOT EXISTS `user` (
   `userPassword` varchar(155) NOT NULL,
   `userStatus` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`userId`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`userId`, `userName`, `userEmailId`, `userPassword`, `userStatus`) VALUES
-(1, 'deblina', 'deblina.chanda86@gmail.com', '123456', 1);
+(5, 'Rishav Sinha', 'risinha@mitaoe.ac.in', '0db5e12e613ce2d37b1725ccbf9df929', 1),
+(6, 'Rishav Sinha', 'risinha@mitaoe.ac.in', '0db5e12e613ce2d37b1725ccbf9df929', 1),
+(7, 'Rishav Sinha', 'risinha@mitaoe.ac.in', '3a2d7564baee79182ebc7b65084aabd1', 1),
+(8, 'Rishav Sinha', 'risinha@mitaoe.ac.in', '0db5e12e613ce2d37b1725ccbf9df929', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
